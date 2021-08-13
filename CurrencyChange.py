@@ -13,6 +13,6 @@ currencyurl = "http://freecurrencyrates.com/api/action.php?do=cvals&iso=" + curr
 f = urllib.request.urlopen(currencyurl)
 obj = json.loads(f.read())
 result = "1 " + currency.upper() + " is "
-result+="{:,.2f}".format(1/obj[currency.upper()]) + " " + basecurrency.upper()
+result += "{:,.2f}".format(1/obj[currency.upper()]) + " " + basecurrency.upper()
 
 print(result);
