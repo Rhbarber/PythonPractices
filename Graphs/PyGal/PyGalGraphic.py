@@ -6,4 +6,5 @@ pie.add("Apple", 55)
 pie.add("Strawberry", 20)
 pie.add("Banana", 25)
 
+# Install lxml package.
 pie.render_in_browser()
