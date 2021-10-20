@@ -58,13 +58,14 @@ def game(player1, player2):
             print(f"El ganador de esta ronda es {winner}.")
             wins[winner] += 1
 
-        #print(f"Idk {wins}")
+        # print(f"Idk {wins}")
         print(f"Puntaje: {player1}: {wins[player1]} - {player2}: {wins[player2]}.")
         print()
 
     overallWinner = findWinner(wins, wins.keys())
 
     print(f"{overallWinner} gana el juego.")
+
 
 def findWinner(wins, names):
     bestOf = 3
@@ -73,6 +74,7 @@ def findWinner(wins, names):
             return name
 
     return None
+
 
 # Ganador
 def winnerCheck(player1, player2, roll1, roll2):

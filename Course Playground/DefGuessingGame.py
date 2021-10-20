@@ -1,8 +1,10 @@
 import random
 
+
 def main():
     header()
     game()
+
 
 def header():
     print("---------------------------")
@@ -11,6 +13,7 @@ def header():
     print()
     print("¡Adivina la cantidad de dulces que hay!")
     print()
+
 
 def game():
     # Variables
@@ -37,5 +40,6 @@ def game():
         print("Ya no tienes mas intentos.")
 
     print("¡Adios!")
+
 
 main()

@@ -1,16 +1,19 @@
 import random
 
+
 # Funcion Principal
 def main():
     showHeader()
     player = input("Inserta tu Nombre: ")
     game(player, "IA")
 
+
 # Titulo/Header
 def showHeader():
     print("-------------------------")
     print(" Piedra, Papel o Tijeras")
     print("-------------------------")
+
 
 # Juego
 def game(player1, player2):
@@ -99,5 +102,6 @@ def getRoll(playerName, rolls):
         # Las comillas se pueden incluir en strings si los delimitadores no son el mismo tipo de comillas.
         return None
     return rolls[selectedIndex]  # Seleccionar de la lista
+
 
 main()
