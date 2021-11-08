@@ -1,8 +1,6 @@
 import requests
 
-URL = "http://checkip.dyndns.org"
-request = requests.get(URL)
-result = request.text.split(': ', 1)[1]
-IP = result.split('</body></html>', 1)[0]
+URL = "https://checkip.amazonaws.com/"
+IP = requests.get(URL).text
 
-print(IP)
+print(IP.replace('\n',''))
