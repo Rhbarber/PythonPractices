@@ -1,4 +1,4 @@
-from pymupdf import fitz
+import fitz
 
 pdf_doc = input("Specify PDF file name: ")
 doc = fitz.open(pdf_doc)
